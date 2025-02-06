@@ -7,7 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-
+Создает модель, миграцию и фабрику.
+php artisan make:model Tag -mf
 
 
 ## About Laravel
