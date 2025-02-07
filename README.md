@@ -10,6 +10,8 @@
 Создает модель, миграцию и фабрику.
 php artisan make:model Tag -mf
 
+Установить дебаггер ларавеля
+composer require barryvdh/laravel-debugbar --dev
 
 ## About Laravel
 
