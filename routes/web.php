@@ -11,7 +11,7 @@ Route::get('/', function () {
 Route::get('/jobs', function () {
   // $jobs = Job::all();
   // Так можно переходить на конкретную страницу
-  $jobs = Job::with('employer')->simplePaginate(3);
+  $jobs = Job::with('employer')->simplePaginate(10);
 
   //А так показывается набор, по которому не найти конкретную страницу
   // $jobs = Job::with('employer')->cursorPaginate(5);

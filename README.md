@@ -16,6 +16,22 @@ composer require barryvdh/laravel-debugbar --dev
 Установка
 php artisan vendor:publish
 
+Сбросить таблицы с данными
+php artisan migrate:fresh
+
+Сбросить таблицы с данными и заполнить сид данными
+php artisan migrate:fresh --seed
+
+Заполнить
+php artisan db:seed
+
+
+Запустить строку для команд на php
+php artisan tinker 
+
+Заполнить таблицы 100 случайными данными
+App\Models\Job::factory(100)->create();
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
