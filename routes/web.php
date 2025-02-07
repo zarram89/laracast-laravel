@@ -9,13 +9,19 @@ Route::get('/', function () {
 });
 
 Route::get('/jobs', function () {
-  $jobs = Job::with('employer')->get();
+  // $jobs = Job::all();
+  // Так можно переходить на конкретную страницу
+  $jobs = Job::with('employer')->simplePaginate(3);
+
+  //А так показывается набор, по которому не найти конкретную страницу
+  // $jobs = Job::with('employer')->cursorPaginate(5);
   // $jobs = Job::all();
 
   return view('jobs', [
     'jobs' => $jobs
   ]);
 });
+
 
 Route::get('/jobs/{id}', function ($id) {
   $job = Job::find($id);

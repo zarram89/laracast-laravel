@@ -13,6 +13,9 @@ php artisan make:model Tag -mf
 Установить дебаггер ларавеля
 composer require barryvdh/laravel-debugbar --dev
 
+Установка
+php artisan vendor:publish
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
