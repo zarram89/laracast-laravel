@@ -42,8 +42,7 @@
       </div>
 
 
-      <!-- //Error messages withowt @error directive
-      <div class="mt-10">
+      <!--<div class="mt-10">
         @if($errors->any())
           <ul>
             @foreach ($errors->all() as $error)
